@@ -1,0 +1,7 @@
+  adminer:
+    image: adminer
+    restart: {{ services_restart_policy }}
+    ports:
+      - 3033:8080
+    environment:
+      DOMAINS: adminer.manager.localhost
