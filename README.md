@@ -1,4 +1,4 @@
-# EMS SS 
+# Football Manager
 
 This is local stack for developers. Check out instructions below to getting started.
 
@@ -36,13 +36,13 @@ Use command `make help` to get all available commands.
 Run the following commands:
 
 ```
-sudo mkdir /etc/nginx/manager.d
+sudo mkdir /opt/homebrew/etc/nginx/manager.d
 sudo make dns
 ```
-Type the directory location with trailing slash: `/etc/nginx/manager.d/`
+Type the directory location with trailing slash: `/opt/homebrew/etc/nginx/manager.d/`
 than reload nginx: `sudo nginx -s reload`
 
-Update your `/etc/nginx/nginx.conf` file, add line `include manager.d/*.conf;` to section http.
+Update your `/opt/homebrew/etc/nginx/nginx.conf` file, add line `include manager.d/*.conf;` to section http.
 
 After that add next rows to your `/etc/hosts` file
 
@@ -58,5 +58,6 @@ If all done correctly, you should had access to all hosts above via your browser
 ### Local passwords
 ```
 http://api.manager.localhost
+http://dashboard.manager.localhost
 http://adminer.manager.localhost postgres/postgres
 ```
