@@ -6,17 +6,17 @@ This is local stack for developers. Check out instructions below to getting star
 
 To work with this repository you should install docker and node.js
 Checkout instructions how to install it on your operating system.
-
+```
 Docker: https://docs.docker.com/engine/install/
 Node.js: https://nodejs.org/en/download/
-
+```
 ## Setup local environment
 
 Create a directory for projects, for example `$HOME/projects/manager`
 
 Go to this directory and clone this repository
 
-Go to directory score
+Go to directory
 
 Run the following commands:
 
