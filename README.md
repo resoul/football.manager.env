@@ -49,6 +49,7 @@ After that add next rows to your `/etc/hosts` file
 ```
 127.0.0.1    dashboard.manager.localhost
 127.0.0.1    api.manager.localhost
+127.0.0.1    mail.manager.localhost
 127.0.0.1    adminer.manager.localhost
 ```
 

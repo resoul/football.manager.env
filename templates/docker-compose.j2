@@ -4,6 +4,7 @@ services:
 {% include "db/docker-compose.j2" %}
 {% include "api/docker-compose.j2" %}
 {% include "dashboard/docker-compose.j2" %}
+{% include "mailhog/docker-compose.j2" %}
 {% include "adminer/docker-compose.j2" %}
 
 volumes:

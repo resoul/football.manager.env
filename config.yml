@@ -13,5 +13,6 @@ enabled_services:
   - db
   - api
   - dashboard
+  - mailhog
   - adminer
 
