@@ -3,9 +3,13 @@ services:
 # storages
 {% include "fm-db/docker-compose.j2" %}
 {% include "fm-api/docker-compose.j2" %}
+{% include "fm-admin/docker-compose.j2" %}
 {% include "fm-dashboard/docker-compose.j2" %}
 {% include "fm-mailhog/docker-compose.j2" %}
 {% include "fm-adminer/docker-compose.j2" %}
 
 volumes:
   volume_fm_db:
+
+networks:
+  fm:

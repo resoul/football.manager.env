@@ -6,12 +6,15 @@ services_restart_policy: always
 projects:
   - name: fm-dashboard
     src: git@github.com:resoul/football.manager.dashboard.git
+  - name: fm-admin
+    src: git@github.com:resoul/football.manager.admin.git
   - name: fm-api
     src: git@github.com:resoul/football.manager.api.git
 
 enabled_services:
   - fm-db
   - fm-api
+  - fm-admin
   - fm-dashboard
   - fm-mailhog
   - fm-adminer

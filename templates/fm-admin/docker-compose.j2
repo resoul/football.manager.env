@@ -1,0 +1,12 @@
+  fm-admin:
+    image: airlance/vite-react-vue:24-alpine
+    volumes:
+      - ./projects/fm-admin:/app
+    restart: {{ services_restart_policy }}
+    environment:
+      DOMAINS: admin.fm.localhost
+      PORT: 3222
+    ports:
+      - 3222:3222
+    depends_on:
+      - fm-api
