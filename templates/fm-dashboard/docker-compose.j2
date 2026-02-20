@@ -1,0 +1,12 @@
+  fm-dashboard:
+    image: airlance/vite-react-vue:24-alpine
+    volumes:
+      - ./projects/fm-dashboard:/app
+    restart: {{ services_restart_policy }}
+    environment:
+      DOMAINS: dashboard.fm.localhost
+      PORT: 3223
+    ports:
+      - 3223:3223
+    depends_on:
+      - fm-api

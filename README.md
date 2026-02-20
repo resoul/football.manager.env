@@ -12,7 +12,7 @@ Node.js: https://nodejs.org/en/download/
 ```
 ## Setup local environment
 
-Create a directory for projects, for example `$HOME/projects/manager`
+Create a directory for projects, for example `$HOME/projects/fm`
 
 Go to this directory and clone this repository
 
@@ -36,21 +36,21 @@ Use command `make help` to get all available commands.
 Run the following commands:
 
 ```
-sudo mkdir /opt/homebrew/etc/nginx/manager.d
+sudo mkdir /opt/homebrew/etc/nginx/fm.d
 sudo make dns
 ```
-Type the directory location with trailing slash: `/opt/homebrew/etc/nginx/manager.d/`
+Type the directory location with trailing slash: `/opt/homebrew/etc/nginx/fm.d/`
 than reload nginx: `sudo nginx -s reload`
 
-Update your `/opt/homebrew/etc/nginx/nginx.conf` file, add line `include manager.d/*.conf;` to section http.
+Update your `/opt/homebrew/etc/nginx/nginx.conf` file, add line `include fm.d/*.conf;` to section http.
 
 After that add next rows to your `/etc/hosts` file
 
 ```
-127.0.0.1    dashboard.manager.localhost
-127.0.0.1    api.manager.localhost
-127.0.0.1    mail.manager.localhost
-127.0.0.1    adminer.manager.localhost
+127.0.0.1    dashboard.fm.localhost
+127.0.0.1    api.fm.localhost
+127.0.0.1    mail.fm.localhost
+127.0.0.1    adminer.fm.localhost
 ```
 
 If all done correctly, you should had access to all hosts above via your browser.
@@ -58,7 +58,7 @@ If all done correctly, you should had access to all hosts above via your browser
 
 ### Local passwords
 ```
-http://api.manager.localhost
-http://dashboard.manager.localhost
-http://adminer.manager.localhost postgres/postgres
+http://api.fm.localhost
+http://dashboard.fm.localhost
+http://adminer.fm.localhost postgres/postgres
 ```

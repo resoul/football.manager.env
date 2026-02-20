@@ -4,15 +4,15 @@ docker_mode: root
 services_restart_policy: always
 
 projects:
-  - name: dashboard
+  - name: fm-dashboard
     src: git@github.com:resoul/football.manager.dashboard.git
-  - name: api
+  - name: fm-api
     src: git@github.com:resoul/football.manager.api.git
 
 enabled_services:
-  - db
-  - api
-  - dashboard
-  - mailhog
-  - adminer
+  - fm-db
+  - fm-api
+  - fm-dashboard
+  - fm-mailhog
+  - fm-adminer
 

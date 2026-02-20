@@ -1,12 +1,12 @@
-  api:
+  fm-api:
     image: airlance/go:1.25.5
     volumes:
-      - ./projects/api:/app
+      - ./projects/fm-api:/app
     restart: {{ services_restart_policy }}
     command: ["air", "-c", "air.api.toml"]
     environment:
-      DOMAINS: api.manager.localhost
+      DOMAINS: api.fm.localhost
     ports:
       - 3032:8080
     depends_on:
-      - db
+      - fm-db

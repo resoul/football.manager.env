@@ -1,7 +1,7 @@
-  mailhog:
+  fm-mailhog:
     image: mailhog/mailhog:v1.0.1
     ports:
       - 3016:8025
     restart: {{ services_restart_policy }}
     environment:
-      DOMAINS: mail.manager.localhost
+      DOMAINS: mail.fm.localhost

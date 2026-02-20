@@ -1,11 +1,11 @@
 services:
 
 # storages
-{% include "db/docker-compose.j2" %}
-{% include "api/docker-compose.j2" %}
-{% include "dashboard/docker-compose.j2" %}
-{% include "mailhog/docker-compose.j2" %}
-{% include "adminer/docker-compose.j2" %}
+{% include "fm-db/docker-compose.j2" %}
+{% include "fm-api/docker-compose.j2" %}
+{% include "fm-dashboard/docker-compose.j2" %}
+{% include "fm-mailhog/docker-compose.j2" %}
+{% include "fm-adminer/docker-compose.j2" %}
 
 volumes:
-  volume_db:
+  volume_fm_db:
