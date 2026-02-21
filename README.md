@@ -50,6 +50,7 @@ After that add next rows to your `/etc/hosts` file
 127.0.0.1    dashboard.fm.localhost
 127.0.0.1    api.fm.localhost
 127.0.0.1    mail.fm.localhost
+127.0.0.1    minio.fm.localhost
 127.0.0.1    adminer.fm.localhost
 ```
 
@@ -61,4 +62,5 @@ If all done correctly, you should had access to all hosts above via your browser
 http://api.fm.localhost
 http://dashboard.fm.localhost
 http://adminer.fm.localhost postgres/postgres
+http://minio.fm.localhost fm-minio/fm-minio
 ```

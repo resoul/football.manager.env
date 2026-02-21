@@ -7,6 +7,7 @@ services:
 {% include "fm-dashboard/docker-compose.j2" %}
 {% include "fm-mailhog/docker-compose.j2" %}
 {% include "fm-adminer/docker-compose.j2" %}
+{% include "fm-minio/docker-compose.j2" %}
 
 volumes:
   volume_fm_db:

@@ -17,5 +17,6 @@ enabled_services:
   - fm-admin
   - fm-dashboard
   - fm-mailhog
+  - fm-minio
   - fm-adminer
 
